@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#background {
+  background-image:url("./../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+}
+
+#map {
+  height: 50vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#game_map {
+  height: 70vh;
+  width: 90vw;
+  margin: 3vh 5vw;
+}
+
+#modal_back {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#modal {
+  background-color: #f4f4f4;
+  margin: 10vh auto;
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+#result_modal_back {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#result_modal {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+#title {
+  font-size: 7vh;
+  margin: 5vh 0 0 0;
+  width: 100%;
+}
+
+#make_team_btn, #join_team_btn {
+  width: 30vw;
+  height: 5vh;
+  margin: 40vh 3vw 0 3vw;
+}
+
+#make_team_btn_ {
+  width: 30vw;
+  height: 5vh;
+  margin: 20vh 3vw 0 3vw;
+}
+
+#setting_range_text, #setting_range_text, #goal_num_text, #gameset_num_text, #limit_time_text{
+  text-align: left;
+  margin: 0 0 0 13vw;
+}
+
+#explanation {
+  margin: 5vh 0 0 0;
+}
+
+#setting_range_input {
+  width: 30vw;
+}
+
+#setting_range_input {
+  width: 15vw;
+}
+
+#goal_num_input, #gameset_num_input {
+  width: 10vw;
+}
+
+#game_info_text {
+  text-align: left;
+  margin: 0 0 0 10vw;
+}
+
+#start_game_btn {
+  width: 30vw;
+  height: 5vh;
+  margin: 1vh 0;
+}
+
+#result_text {
+  padding: 10vh 0;
+  font-size: 2.5vh;
+
+}
+
+#result_btn, #cancel_btn{
+  width: 30vw;
+  height: 5vh;
+  margin: 1vh;
+}
+
+#next_game_btn, #finish_btn {
+  width: 30vw;
+  height: 5vh;
+  margin: 40vh 1vh 1vh 1vh;
+}
